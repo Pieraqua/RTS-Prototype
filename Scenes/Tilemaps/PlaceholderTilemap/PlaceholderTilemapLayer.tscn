@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bors45jggler6"]
+
+[ext_resource type="TileSet" uid="uid://c4eobyrtvrko7" path="res://Resources/PlaceholderTileset.tres" id="1_ym6em"]
+
+[node name="PlaceholderTilemapLayer" type="TileMapLayer" unique_id=2012278865]
+tile_set = ExtResource("1_ym6em")
