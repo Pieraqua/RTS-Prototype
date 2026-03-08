@@ -38,6 +38,17 @@ SPEED = 250
 sprite_frames = SubResource("SpriteFrames_n8tl6")
 frame_progress = 0.33285967
 
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=491323336]
+avoidance_enabled = true
+radius = 20.0
+neighbor_distance = 100.0
+max_speed = 500.0
+avoidance_layers = 3
+avoidance_mask = 2
+debug_enabled = true
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=250188582]
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_r618s")
+
+[connection signal="velocity_computed" from="NavigationAgent2D" to="." method="_velocity_computed"]
