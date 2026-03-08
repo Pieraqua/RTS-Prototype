@@ -45,7 +45,6 @@ neighbor_distance = 100.0
 max_speed = 500.0
 avoidance_layers = 3
 avoidance_mask = 2
-debug_enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=250188582]
 position = Vector2(0, 1)

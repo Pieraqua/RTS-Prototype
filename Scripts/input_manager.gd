@@ -10,7 +10,7 @@ func handle_inputs(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT:
 		if event.is_pressed():
 			var target = get_viewport().get_mouse_position()
-			selected_units.all(func(x): x.walk_towards(target))
+			selected_units.map(func(x): x.walk_towards(target))
 	elif event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if event.is_pressed():
 			_start_dragging(event)

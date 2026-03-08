@@ -1,23 +1,31 @@
 [gd_resource type="TileSet" format=3 uid="uid://c4eobyrtvrko7"]
 
-[ext_resource type="Texture2D" uid="uid://c447iml8jyg7h" path="res://Assets/PlaceholderTilemap.png" id="1_p1kr1"]
+[ext_resource type="Texture2D" uid="uid://dllxkql0p6tga" path="res://Assets/PlaceholderTileset2.png" id="1_p1kr1"]
 
-[sub_resource type="NavigationPolygon" id="NavigationPolygon_p1kr1"]
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_xlvfx"]
 vertices = PackedVector2Array(16, 16, -16, 16, -16, -16, 16, -16)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)])
 agent_radius = 0.0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_beg76"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y3v7k"]
 texture = ExtResource("1_p1kr1")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
-0:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_p1kr1")
+0:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_xlvfx")
 1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(16, -16, 16, 16, -16, 16)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, 16, -16, 16)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, -16, 16)
 
 [resource]
 tile_size = Vector2i(32, 32)
-uv_clipping = true
 physics_layer_0/collision_layer = 1
 navigation_layer_0/layers = 1
-sources/0 = SubResource("TileSetAtlasSource_beg76")
+sources/0 = SubResource("TileSetAtlasSource_y3v7k")
